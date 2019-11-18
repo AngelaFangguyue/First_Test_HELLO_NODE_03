@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        /* margin: 220px 0 0 0; */
+        display: flex;
+        /* border: 10px SOLID RED; */
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        flex-
+      }
+
+      @keyframes beathearts {
+        0% {
+        }
+        100% {
+          transform: scale(1.5);
+        }
+      }
+
+      .heart {
+        /* border: 1px solid black; */
+        position: relative;
+        display: inline-block;
+        /* transition: all 5s; */
+        animation: beathearts 700ms infinite alternate;
+        /* left: 50%; */
+        /* top: 50%; */
+        /* transform: translateX(-80%); */
+        margin:200px 0 0 0;
+      }
+      /* .heart:hover {
+        transform: scale(1.2);
+      } */
+      .heart > div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        color: black;
+      }
+      .left {
+        /* border: 1px solid red; */
+
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        transform: rotate(45deg) translateX(42px);
+        border-radius: 50% 0 0 50%;
+      }
+      .right {
+        /* border: 1px solid green; */
+
+        position: absolute;
+        top: -100%;
+        left: 100%;
+        transform: rotate(45deg) translateY(42px);
+        border-radius: 50% 50% 0 0;
+      }
+      .bottom {
+        /* border: 1px solid blue; */
+
+        transform: rotate(45deg);
+      }
+      .wenzi {
+        /* border: 1px solid black; */
+        color: pink;
+        font-weight: 500;
+        /* position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); */
+        display: inline-block;
+       
+       margin:150px 0 0 0;
+      }
+      
+
+      @media screen and (max-width: 800px) {
+        .heart {
+          top: 100px;
+        }
+        .heart > div {
+          width: 50px;
+          height: 50px;
+        }
+        .left {
+          transform: rotate(45deg) translateX(21px);
+        }
+        .right {
+          transform: rotate(45deg) translateY(21px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heart">
+      <div class="left">G</div>
+      <div class="right">D</div>
+      <div class="bottom">D</div>
+    </div>
+    
+      <span class="wenzi">冷得要死，我想像熊一样冬眠呢</span>
+    </div>
+  </body>
+</html>
